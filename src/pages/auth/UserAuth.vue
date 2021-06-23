@@ -39,20 +39,6 @@ export default {
       error: null,
     };
   },
-  computed: {
-    submitButtonCaption() {
-      if (this.mode === 'login') {
-        return 'Login';
-      }
-      return 'Signup';
-    },
-    switchModeButtonCaption() {
-      if (this.mode === 'login') {
-        return 'Signup instead';
-      }
-      return 'Login instead';
-    },
-  },
   methods: {
     async submitForm() {
       this.formIsValid = true;
