@@ -2,8 +2,8 @@ export default {
   async addCar(context, data) {
     const { userId } = context.rootGetters;
     const carData = {
-      brand: data.first,
-      model: data.last,
+      brand: data.brand,
+      model: data.model,
       hourlyRate: data.rate,
       areas: data.areas,
     };
