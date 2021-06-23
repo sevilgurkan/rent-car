@@ -44,14 +44,14 @@ export default {
 
     Object.keys(responseData).forEach((key) => {
       if (responseData.hasOwnProperty(key)) {
-        const coach = {
+        const car = {
           id: key,
           brand: responseData[key].brand,
           model: responseData[key].model,
           hourlyRate: responseData[key].hourlyRate,
           areas: responseData[key].areas,
         };
-        cars.push(coach);
+        cars.push(car);
       }
     });
 
